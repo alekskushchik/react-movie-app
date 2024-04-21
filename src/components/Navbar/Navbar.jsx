@@ -6,11 +6,11 @@ export const Navbar = ({ menuItems }) => {
     return (
         <ul className={classes.menu}>
             {menuItems.map(menuItem => (
-                <Link to={menuItem.link} className={classes.menuItem__link}>
-                    <li key={menuItem.id} className={classes.menuItem}>
+                <li  key={menuItem.id} className={classes.menuItem}>
+                    <Link to={menuItem.link} className={classes.menuItem__link} >
                         {menuItem.name}
-                    </li>
-                </Link>
+                    </Link>
+                </li>
             ))}
         </ul>
     );

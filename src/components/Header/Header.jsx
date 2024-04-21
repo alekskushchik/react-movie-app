@@ -12,11 +12,13 @@ export const Header = () => {
     { id: 3, name: "Upcoming", link: "/upcoming" },
   ];
   return (
-    <div className={classes.headerWrapper}>
-      <Link to="/">
-        <Logo width={150} />
-      </Link>
-      <Navbar menuItems={menu} />
-    </div>
+    <header className={classes.headerWrapper}>
+      <div className={classes.contentWrapper}>
+        <Link to="/">
+          <Logo width={150} />
+        </Link>
+        <Navbar menuItems={menu} />
+      </div>
+    </header>
   );
 };
